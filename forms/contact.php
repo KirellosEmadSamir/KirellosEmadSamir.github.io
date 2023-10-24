@@ -1,5 +1,6 @@
 <?php
-  $receiving_email_address = ('kirellos_emad@yahoo.com');
+  //$receiving_email_address = ('kirellos_emad@yahoo.com');
+$contact->cc = array('Kirellos_emad@yahoo.com', 'Kirellos_emad@yahoo.com');
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
   } else {
