@@ -127,78 +127,111 @@
 
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: left;
+      padding: 20px;
+      color: #333333; /* Text color */
+    }
 
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>
-            Currently I'm searching for an Embedded Software Engineer Job
-              Here are a few technologies I've been working with recently:
-            C/C++, Embedded C, Debugging, Scripting, Python, Assembly.
-          </p>
-        </div>
+    .skills-section {
+      margin: 50px;
+      padding: 20px;
+      background-color: #ffffff; /* Skills section background color */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    }
 
-        <div class="row skills-content">
+    .skill {
+      margin-bottom: 20px;
+    }
 
-          <div class="col-lg-6" data-aos="fade-up">
+    .skill-name {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #3498db; /* Skill name color */
+    }
 
-            <div class="progress">
-              <span class="skill">C/C++ <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+    .skill-description {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
 
-            <div class="progress">
-              <span class="skill">Embedded C <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+    .skill-bar {
+      height: 20px;
+      background-color: #ecf0f1; /* Bar background color */
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
 
-            <div class="progress">
-              <span class="skill">Debugging <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+    .skill-level {
+      height: 100%;
+      background-color: #3498db; /* Bar color */
+      border-radius: 10px;
+    }
+  </style>
+  <title>My Skills</title>
+</head>
+<body>
+  <div class="skills-section">
+    <h2>Technical Skills</h2>
 
-          </div>
+    <!-- C/C++ Skill -->
+    <div class="skill">
+      <div class="skill-name">C/C++</div>
+      <div class="skill-description">Proficient in developing high-performance applications and algorithms.</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 80%;"></div>
+      </div>
+    </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+    <!-- Embedded C Skill -->
+    <div class="skill">
+      <div class="skill-name">Embedded C</div>
+      <div class="skill-description">Extensive experience in firmware development for embedded systems.</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 85%;"></div>
+      </div>
+    </div>
 
-            <div class="progress">
-              <span class="skill">Scripting <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+    <!-- Debugging Skill -->
+    <div class="skill">
+      <div class="skill-name">Debugging</div>
+      <div class="skill-description">Proven track record of identifying and resolving complex software issues.</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 75%;"></div>
+      </div>
+    </div>
 
-            <div class="progress">
-              <span class="skill">VCS <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+    <!-- Scripting Skill -->
+    <div class="skill">
+      <div class="skill-name">Scripting</div>
+      <div class="skill-description">Proficient in scripting languages for automation and task optimization.</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 70%;"></div>
+      </div>
+    </div>
 
-            <div class="progress">
-              <span class="skill">Assembly <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
+    <!-- Python Skill -->
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-description">Skilled in developing Python applications for various engineering tasks.</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 90%;"></div>
+      </div>
+    </div>
 
-          </div>
-
-        </div>
-
+    <!-- Assembly Skill -->
+    <div class="skill">
+      <div class="skill-name">Assembly</div>
+      <div class="skill-description">Experience in low-level programming and optimizing code for efficiency.</div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 80%;"></div>
       </div>
     </section><!-- End Skills Section -->
 
