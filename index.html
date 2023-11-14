@@ -350,19 +350,7 @@
                 <li> Arabic: (Advanced Proficiency)</li>
                 <li> English: C1 (Advanced)</li>
                 <li> Deutsch: B2 (Upper Intermediate)</li>
-                
-              <p><em>- Arabic: (Advanced Proficiency)</em></p>
-              <p>
-              
-
-               <p><em>- English: C1 (Advanced)</em></p>
-              <p>
-             
-
-               <p><em>- Deutsch: B2 (Upper Intermediate)</em></p>
-              <p>
-              
-              
+               
             </div>
           </div>
   </div>
@@ -507,6 +495,127 @@
       </div>
     </section><!-- End Contact Section -->
 
+
+
+ 
+ </section><!-- gallery Section -->
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Slideshow</title>
+  <style>
+    /* Style for the gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    /* Style for the slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Style for the slideshow images */
+    .mySlides {
+      display: none;
+      width: 100%;
+    }
+
+    /* Style for the navigation dots */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Gallery Slideshow</h2>
+
+  <!-- Gallery container -->
+  <div class="gallery">
+    <!-- Add your images here -->
+    <img src="images/image1.jpg" alt="Image 1" style="width: 200px; height: 150px;">
+    <img src="images/image2.jpg" alt="Image 2" style="width: 200px; height: 150px;">
+    <img src="images/image3.jpg" alt="Image 3" style="width: 200px; height: 150px;">
+    <!-- Add more images as needed -->
+  </div>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Slides -->
+    <div class="mySlides">
+      <img src="images/image1.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/image2.jpg" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+      <img src="images/image3.jpg" style="width: 100%;">
+    </div>
+
+    <!-- Add more slides as needed -->
+
+    <!-- Navigation dots -->
+    <div style="text-align: center; margin-top: 20px;">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <!-- Add more dots corresponding to the number of slides -->
+    </div>
+  </div>
+
+  <!-- JavaScript for the slideshow -->
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+
+    // Initial call to start the slideshow
+    showSlides();
+  </script>
+</body>
+  </section><!-- end gallery Section -->
+
+ 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
