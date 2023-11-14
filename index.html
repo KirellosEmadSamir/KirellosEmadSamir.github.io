@@ -29,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
   <!-- Styles for the pop-up -->
   <style>
     .overlay {
@@ -700,6 +701,16 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script>
+    // JavaScript to show the pop-up on page load
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        document.getElementById('welcomePopup').style.display = 'block';
+      }, 500); // Show after 500 milliseconds (adjust as needed)
+    });
+  </script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
